@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lua Rotasi Script</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+    pre {
+      background-color: #2d2d2d;
+      color: #f8f8f2;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Lua Script - Rotasi Objek</h2>
+
+  <pre><code>
+while true do
+  script.Parent:SetPrimaryPartCFrame(script.Parent:GetPrimaryPartCFrame() * CFrame.fromEulerAngles(0.01, 0, 0))
+  wait()
+end
+  </code></pre>
+
+</body>
+</html>
